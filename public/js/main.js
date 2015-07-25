@@ -235,13 +235,13 @@ $(document).ready( function() {
       }
     });
 
-    $(document).on('click','.navbar-collapse.in',function(e) {
+    $(document).on('click','.navbar-collapse.in', function(e) {
 	    if( $(e.target).is('a') ) {
 	        $(this).collapse('hide');
 	    }
 	});
 
 	$('#download-cv').click( function() {
-		window.location = 'https://www.dropbox.com/s/j1woh7slntk2q3b/How%20to%20use%20the%20Public%20folder.txt?dl=1';
+		window.location = 'https://www.dropbox.com/s/sxwo7lgk47ocek5/Agata_Patel_CV.pdf?dl=1';
 	});
 });
