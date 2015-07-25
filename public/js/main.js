@@ -245,11 +245,3 @@ $(document).ready( function() {
 		window.location = 'https://www.dropbox.com/s/j1woh7slntk2q3b/How%20to%20use%20the%20Public%20folder.txt?dl=1';
 	});
 });
-
-	$(document).ready(function(){
-	  $('.project-2-carousel').slick();
-	});
-
-	function resizeIframe(obj) {
-	   obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-	}
