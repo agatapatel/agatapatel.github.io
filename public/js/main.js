@@ -1,4 +1,5 @@
-$('#about-lnk').on('click', function() {
+$(document).ready( function() {
+	$('#about-lnk').on('click', function() {
 		if($('.about').css('display') == 'none') {
 			$('.home-main').animate({
 				left: "-=250",
@@ -243,6 +244,7 @@ $('#about-lnk').on('click', function() {
 	$('#download-cv').click( function() {
 		window.location = 'https://www.dropbox.com/s/j1woh7slntk2q3b/How%20to%20use%20the%20Public%20folder.txt?dl=1';
 	});
+});
 
 	$(document).ready(function(){
 	  $('.project-2-carousel').slick();
