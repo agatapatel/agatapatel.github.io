@@ -163,6 +163,9 @@ body {
 	.about {
 		display: none;
 	}
+	.about-text {
+		font-family: Raleway;
+	}
 	.back-btn-container {
 		width: 20%;
 		float: left;
