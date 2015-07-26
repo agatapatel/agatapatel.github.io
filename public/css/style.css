@@ -90,6 +90,9 @@ body {
 	.cv > div {
 		margin: inherit;
 	}
+	.contact-details-container {
+		margin-top: 5%;
+	}
 	.dom-title, .chair-title, .park-title {
 		width: 23%;
 		float: right;
@@ -132,6 +135,7 @@ body {
 		width: 45%;
 		float: left;
 		margin-right: 4%;
+		margin-top: 7%;
 	}
 	.contact-form {
 		width: 50%;

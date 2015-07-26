@@ -216,7 +216,7 @@ $(document).ready( function() {
       sendButton.innerHTML = 'sending..';
 
       var xhr = new XMLHttpRequest();
-      xhr.open('POST', '//formspree.io/contact@emailllllll.org', true);
+      xhr.open('POST', '//formspree.io/agatapatel@outlook.com', true);
       xhr.setRequestHeader("Accept", "application/json")
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
 
