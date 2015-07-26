@@ -92,6 +92,8 @@ body {
 	}
 	.contact-details-container {
 		margin-top: 5%;
+		font-size: 1.1em;
+    	font-family: Montserrat;
 	}
 	.contact-phone, .contact-email {
 		margin-left: -17%;
