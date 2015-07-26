@@ -93,6 +93,9 @@ body {
 	.contact-details-container {
 		margin-top: 5%;
 	}
+	.contact-phone, .contact-email {
+		margin-left: -17%;
+	}
 	.dom-title, .chair-title, .park-title {
 		width: 23%;
 		float: right;
