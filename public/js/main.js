@@ -242,6 +242,6 @@ $(document).ready( function() {
 	});
 
 	$('#download-cv').click( function() {
-		window.location = 'https://www.dropbox.com/s/sxwo7lgk47ocek5/Agata_Patel_CV.pdf?dl=1';
+		window.location = 'https://www.dropbox.com/s/m5pzv4vwzilznxp/Agata_Patel_CV.pdf?dl=1';
 	});
 });
