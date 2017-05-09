@@ -1,0 +1,13 @@
+.foot-social svg {
+    path {
+        fill: white;   
+    }
+    &:hover {
+        circle {
+            fill: white;
+        }
+        path {
+            fill: goldenrod;
+        }
+    }
+}

@@ -1,0 +1,167 @@
+.portfolio {
+    z-index: 1;
+    padding-top: 12vh;
+    img {
+        width: 100%;
+    }
+    &-row {
+        width: 100%;
+        padding: 100px 0;
+        max-width: 1300px;
+        margin: 0 auto;
+        &-title {
+            padding: 0;
+        }
+    }
+    &-col {
+        &:first-child {
+            padding-right: 5px;
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-left: 5px;
+            padding-right: 0;
+        }
+    }
+    &-title {
+        font-size: 6vw;
+        font-family: 'Josefin Slab', serif;
+        text-transform: uppercase;
+        color: #996e09;
+        margin-top: 15px;
+        z-index: 1;
+    }
+    .portfolio-row-1 {
+        background: url(../static/img/1.jpg);
+        background-size: cover;
+        padding: 0;
+        position: relative;
+        background-position: bottom;
+        height: 70vh;
+        background-repeat: no-repeat;
+        filter: contrast(1.2) saturate(1.35);
+        > div {
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(90deg, rgba(210, 205, 167, 0.7), rgba(0, 0, 0, 0));
+            position: relative;
+            bottom: 0;
+        }
+    }
+    .title {
+        padding: 20px 0 20px 100px;
+        background-color: goldenrod;
+    }
+}
+.portfolio-row-1, .portfolio-row-3 {
+    background-color: #121212;
+}
+.portfolio-row-2, .portfolio-row-4 {
+    background: linear-gradient(black, #121212);
+}
+.portfolio-row-2 {
+    padding-bottom: 0px;
+}
+.portfolio-row-5 {
+    background: black;
+}
+.portfolio-row-5 {
+    overflow-y: hidden;
+    width: 99vw;  /** <---- wut? **/
+    min-height: 200vh;
+    padding-bottom: 100px;
+    position: relative;
+    &__first-image {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        background-image: url(../static/img/5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 55vw;
+        height: 75vh;
+        box-shadow: 0 0 20px 0px #f6f6f9;
+        opacity: 0;
+    }
+    img {
+        position: absolute;
+        width: 40%;
+        top: 30%;
+        right: 7%;
+        height: auto;
+        box-shadow: 0 0 20px 0px #f6f6f9;
+    }
+}
+.portfolio-row-9 {
+    background: url(../static/img/8.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 70vh;
+    background-repeat: no-repeat;
+    filter: contrast(1.2) saturate(1.35);
+}
+.portfolio-row-10 {
+    padding-bottom: 0;
+}
+.quote-wall {
+    width: 100%;
+    padding: 10%;
+    .quote-text {
+        font-size: 7vw;
+        font-family: 'Pacifico', cursive;
+        color: #e7a50a;
+        span {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            &:nth-child(2) {
+                font-size: 3vw;
+            }
+        }
+        &.quote-text__first-smaller {
+            span {
+                text-align: center;
+                width: 100%;
+                display: inline-block;
+                &:nth-child(1) {
+                    font-size: 3vw;
+                }
+                &:nth-child(2) {
+                    font-size: 7vw;
+                }
+            }
+        }
+    }
+}
+.hero-image {
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    min-height: 100vh;
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    &-1 {
+        background-image: url(../static/img/4.jpg);
+    }
+    &-2 {
+        background-image: url(../static/img/7.jpg);
+    }
+}
+.quote-row {
+    padding: 0;
+    max-width: none;
+    .quote {
+        padding: 0;
+    }
+    .quote-wall-second {
+        padding: 0;
+        padding-bottom: 10%;
+        background: black;
+    }
+}
+@import '../modules/img-overlay';
+@include img-overlay(pf-col);
+
+#img-12 {
+    opacity: 0;
+}
