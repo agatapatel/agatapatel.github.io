@@ -1,0 +1,110 @@
+html.cv, html.page__cv body {
+    background-color: #121212;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23252302' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.cv {
+	padding-top: 12vh;
+}
+#cv .jumbotron {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.cv-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background: white;
+    font-size: 1.56rem;
+    line-height: 1.5;
+    margin-bottom: 10vh;
+    padding-bottom: 5vh;
+}
+.cv__section {
+    padding: 0 5%;
+    margin-top: 5%;
+}
+.cv-header {
+    background-color: #322c03;
+	color: #e1e1e1;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+	padding-bottom: 2%;
+}
+.program-list { 
+	font-family: Segoe UI;
+}
+.page-header { 
+	font-family: Segoe UI;
+	font-size: 1.3em;
+	font-weight:500;
+	margin-top: -1%;
+}
+.page-header-2 {
+	margin-top: -4%;
+}
+.page-header-3 {
+    margin-top: 4%;
+}
+.shift-right {
+	text-align: right;
+	padding-top: 2%;
+	padding-right: 10%;
+}
+ul {
+	list-style-type: none;
+}
+.r {
+	float: right;
+	font-family: Century Gothic;
+}
+#name {
+	font-size: 2.5rem;
+}
+.my_photo {
+	height: 150px;
+	width: 150px;
+	margin-top: 8%;
+	margin-left: 10%;
+}
+.portfolio-link {
+	margin-top: 5%;
+}
+.company-name {
+	font-size: 1.2em;
+}
+.company-position {
+	font-size: 1.1em;
+}
+.next-item {
+	margin-top: 3%;
+}
+.container {
+	display: table;
+	vertical-align: middle;
+}
+.center-icon-container {
+	text-align: center;
+}
+.big-icon {
+	font-size: 2em;
+	text-align: center;
+}
+.program-list {
+	margin-top: 2%;
+	margin-left: 20%;
+}
+.other-stuff {
+	margin-left: 5%;
+	margin-bottom: 2%;
+	font-family: Century Gothic;
+}
+.date {
+	font-family: Century Gothic;
+	font-size: 1.1em;
+}
+.project-details {
+	margin-top: -1%;
+}
+.klauzula {
+	font-size: 0.7em;
+	font-family: Segoe UI !important;
+}

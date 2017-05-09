@@ -1,0 +1,43 @@
+// @import 'base/normalize/';
+// @include normalize();
+/* No need to use normalize. Bootstrap includes that already! */
+
+@import 'vendor/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/';
+
+html {
+    font-size: 62.5%;
+}
+body {
+    line-height: 1;
+    font-size: 1em;
+    background-color: #121212;  /************************  watch out <--- navbar animation ***/
+    // max-width: 1300px;
+    margin: 0 auto;
+}
+
+@import 'pages/home';
+@import 'pages/portfolio';
+@import 'pages/projects';
+@import 'pages/cv';
+@import 'pages/contact';
+@import 'modules/nav';
+@import 'modules/footer';
+
+@import 'pages/projects/dom';
+
+
+/** 
+
+    rem multiplier : 1.25; 
+
+    0.8rem;
+    1rem;
+    1.25rem;
+    1.56rem;
+    1.95rem;
+    2.44rem;
+    3.05rem;
+    3.81rem;
+    4.76rem;
+
+**/

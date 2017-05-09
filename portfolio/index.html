@@ -3,14 +3,14 @@
 <head>
     <!-- inject:head:html -->
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agata Patel - Architekt wnętrz</title>
-    <link rel="stylesheet" href="static/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Pacifico|Montserrat" rel="stylesheet">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="lazyload.min.js"></script>
-    <script defer src="script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agata Patel - Architekt wnętrz</title>
+<link rel="stylesheet" href="../static/main.css" />
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Pacifico|Montserrat" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="../lazyload.min.js"></script>
+<script defer src="../script.js"></script>
 	<!-- endinject -->
 </head>
 <body>
@@ -109,7 +109,6 @@
         </div>
         <div id="nav-links-wrap" class="col-md-6 nav-links-wrap navbar-collapse collapse-in">
             <ul class="nav-links">
-                <!--<li><a href="#">lorem ipsum</a></li>-->
                 <li><a id="portfolio-link" href="/portfolio">portfolio</a></li>
                 <li><a id="projects-link" href="/projects">projekty</a></li>
                 <li><a id="cv-link" href="/cv">cv</a></li>
@@ -128,13 +127,94 @@
     </div>
 </nav>
 	<!-- endinject -->
-    <section id="home" class="ha-waypoint main-section home" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
-		<div class="row home-row photo-row">
-			<img class="my-photo" src="static/img/agata_patel_about.png" alt="">
+	<section class="mobile-menu">
+		<div class="mobile-menu__close">
+			XXX
 		</div>
-		<div class="row home-row about-text-row">
-			Absolwentka Architektury Wnętrz. 
-			Pragnąca rozwijać się w temacie designu i grafiki. Wielbicielka sztuki. Zafascynowana rozwojem techniki. Nieustraszona podróżniczka, która marzy o zwiedzeniu wszystkich kontynentów. Wielbicielka eksperymentów kulinarnych. Lubi nowe wyzwania i pracę zespołową.
+	</section>
+    <section id="portfolio" class="ha-waypoint main-section portfolio" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
+        <div class="row portfolio-row portfolio-row-title">
+            <div class="col-md-12 portfolio-title">Realizacje</div>
+        </div>
+		<div class="row portfolio-row portfolio-row-1">
+            <div class="col-md-12"></div>
+        </div>
+        <div class="row portfolio-row portfolio-row-2">
+            <div class="col-md-6 col-sm-12 portfolio-col">
+				<div class="pf-col__hover-wrap">
+					<img data-frz-src="../static/img/2.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== onload=lzld(this) onerror=lzld(this) />
+					<!--<div class="pf-col__image-overlay">
+						<a href="#">BUMBOO</a>
+					</div>-->
+				</div>
+            </div>
+            <div class="col-md-6  col-sm-12 portfolio-col">
+				<div class="pf-col__hover-wrap">
+					<img data-frz-src="../static/img/3.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== onload=lzld(this) onerror=lzld(this) />
+				</div>
+            </div>
+        </div>
+        <div class="row portfolio-row portfolio-row-3">
+            <div class="col-md-12 quote">
+				<div class="quote-wall">
+					<div class="quote-text">
+						<span>Musi być łał!</span>
+						<span>i koniec.</span>
+					</div>
+				</div>
+            </div>
+        </div>
+		<div class="hero-image hero-image-1 portfolio-row-4"></div>
+		<div class="row portfolio-row-5">
+			<div>
+				<div id="portfolio-row-5__first-image" class="portfolio-row-5__first-image"></div>
+				<img id="img-12" data-frz-src="../static/img/6.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== onload=lzld(this) onerror=lzld(this) />
+			</div>
+        </div>
+		<div class="row portfolio-row portfolio-row-6 quote-row">
+            <div class="col-md-12 quote">
+				<div class="quote-wall quote-wall-second">
+					<div class="quote-text">
+						<span>Wymiatać</span>
+						<span>a nie tylko projektować!</span>
+					</div>
+				</div>
+            </div>
+        </div>
+		<div class="hero-image hero-image-2 portfolio-row-7"></div>
+		<div class="row portfolio-row portfolio-row-8 quote-row">
+            <div class="col-md-12 quote">
+				<div class="quote-wall">
+					<div class="quote-text quote-text__first-smaller">
+						<span>Projektować</span>
+						<span>Szczęście</span>
+					</div>
+				</div>
+            </div>
+        </div>
+		<div class="row portfolio-row portfolio-row-9">
+            <div class="col-md-12"></div>
+        </div>
+        <div class="row portfolio-row portfolio-row-10">
+            <div class="col-md-6 col-sm-12 portfolio-col">
+				<div class="pf-col__hover-wrap">
+					<img data-frz-src="../static/img/9.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== onload=lzld(this) onerror=lzld(this) />
+					<!--<div class="pf-col__image-overlay">
+						<a href="#">BUMBOO</a>
+					</div>-->
+				</div>
+            </div>
+            <div class="col-md-6  col-sm-12 portfolio-col">
+				<div class="pf-col__hover-wrap">
+					<img data-frz-src="../static/img/10.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== onload=lzld(this) onerror=lzld(this) />
+					<!--<div class="pf-col__image-overlay">
+						<a href="#">BUMBOO</a>
+					</div>-->
+				</div>
+            </div>
+        </div>
+		<div class="row project-row">
+			<a class="btn-next-project" href="../projects">Zobacz projekty → </a>
 		</div>
 	</section>
 	<!-- inject:footer:html -->
