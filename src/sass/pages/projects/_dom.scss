@@ -17,6 +17,12 @@
            margin-bottom: 5%;
            margin-top: 5%; 
         }
+        @include media('<=tablet') {
+            padding: 60px 10px;
+            &-title {
+                padding: 0;
+            }
+        }
     }
     &-col {
         &:first-child {
@@ -41,6 +47,9 @@
         font-size: 1.56rem;
         font-family: 'Montserrat', sans-serif;
         line-height: 1.5;
+        @include media('<=tablet') {
+            padding: 50px 5vh;
+        }
     }
     .project-images-wrap:after {
         content: '';

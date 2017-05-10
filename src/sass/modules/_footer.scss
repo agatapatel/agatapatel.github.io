@@ -65,6 +65,13 @@ footer {
                 }
             }
         }
+        @include media('<tablet') {
+            li {
+                text-align: center;
+                display: block;
+                margin: 30px 0;
+            }
+        }
     }
 }
 .foot-logo {

@@ -1,7 +1,7 @@
 .portfolio {
     z-index: 1;
     padding-top: 12vh;
-    img {
+    &-img {
         width: 100%;
     }
     &-row {
@@ -17,10 +17,16 @@
         &:first-child {
             padding-right: 5px;
             padding-left: 0;
+            @include media('<=tablet') {
+                padding: 0;
+            }
         }
         &:last-child {
             padding-left: 5px;
             padding-right: 0;
+            @include media('<=tablet') {
+                padding: 0;
+            }
         }
     }
     &-title {
@@ -37,16 +43,8 @@
         padding: 0;
         position: relative;
         background-position: bottom;
-        height: 70vh;
         background-repeat: no-repeat;
         filter: contrast(1.2) saturate(1.35);
-        > div {
-            padding: 0;
-            margin: 0;
-            background: linear-gradient(90deg, rgba(210, 205, 167, 0.7), rgba(0, 0, 0, 0));
-            position: relative;
-            bottom: 0;
-        }
     }
     .title {
         padding: 20px 0 20px 100px;
@@ -66,37 +64,36 @@
     background: black;
 }
 .portfolio-row-5 {
-    overflow-y: hidden;
-    width: 99vw;  /** <---- wut? **/
-    min-height: 200vh;
-    padding-bottom: 100px;
-    position: relative;
+    width: 100%;
+    &__wrap {
+        width: 85%;
+        margin: 0 auto;
+    }
+    &__bg-wrap {
+        width: 60%;
+        padding-top: 100px;
+    }
     &__first-image {
-        position: absolute;
-        top: 10%;
-        left: 10%;
         background-image: url(../static/img/5.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 55vw;
-        height: 75vh;
         box-shadow: 0 0 20px 0px #f6f6f9;
-        opacity: 0;
     }
-    img {
-        position: absolute;
-        width: 40%;
-        top: 30%;
-        right: 7%;
-        height: auto;
+    &__second-image {
+        position: relative;
+        left: 45%;
+        width: 55%;
+        bottom: 200px;
         box-shadow: 0 0 20px 0px #f6f6f9;
+        @include media('<=tablet') {
+            bottom: 75px;
+        }
     }
 }
 .portfolio-row-9 {
     background: url(../static/img/8.jpg);
     background-size: cover;
     background-position: bottom;
-    height: 70vh;
     background-repeat: no-repeat;
     filter: contrast(1.2) saturate(1.35);
 }
@@ -136,7 +133,7 @@
 .hero-image {
     background-repeat: no-repeat;
     // background-attachment: fixed;
-    min-height: 100vh;
+    // min-height: 100vh;
     background-size: cover;
     overflow-x: hidden;
     margin: 0;
@@ -145,7 +142,11 @@
     }
     &-2 {
         background-image: url(../static/img/7.jpg);
-    }
+    }   
+}
+.bg-placeholder {
+    visibility: hidden;
+    width: 100%;
 }
 .quote-row {
     padding: 0;

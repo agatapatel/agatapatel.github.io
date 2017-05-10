@@ -1,12 +1,12 @@
 $(document).ready( function () {
     $('.nav-button').on('click', function (e) {
         e.stopPropagation();
-        $('.mobile-menu').show();
+        $('.mobile-menu').addClass('isDisplayed');
     });
 
     $('.mobile-menu__close').on('click', function(e) {
         e.stopPropagation();
-        $('.mobile-menu').hide();
+        $('.mobile-menu').removeClass('isDisplayed');
     });
 
     var pages = ['portfolio', 'projects', 'cv', 'contact'];
