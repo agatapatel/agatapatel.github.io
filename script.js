@@ -53,6 +53,10 @@ $(document).ready( function () {
     $('#img-12').waypoint(function(direction) {
         $(this.element).addClass('fadeInRight');
     }, { offset: '100%' });
+
+    $('#download-cv').click( function() {
+        window.location = 'https://www.dropbox.com/s/m5pzv4vwzilznxp/Agata_Patel_CV.pdf?dl=1';
+  	});
     
 });
 

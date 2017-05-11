@@ -3498,7 +3498,6 @@ html.cv, html.page__cv body {
   background: white;
   font-size: 1.56rem;
   line-height: 1.5;
-  margin-bottom: 10vh;
   padding-bottom: 5vh; }
   @media (max-width: 768px) {
     .cv-container {
