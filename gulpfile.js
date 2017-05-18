@@ -1,19 +1,22 @@
 var gulp = require('gulp'),
     rename = require('gulp-rename'),
     inject = require('gulp-inject'),
-    gulpif = require('gulp-if');
+    gulpif = require('gulp-if'),
+    cssnano = require('gulp-cssnano');
 
 gulp.task('buildMainPages', function buildHTML() {
-  var pages = ['contact', 'cv', 'portfolio', 'projects', 'index'];
-  var src = 'src/';
-  var dest = '/';
+  var pages = ['contact', 'cv', 'portfolio', 'projects', 'index'],
+    src = 'src/',
+    dest = '/';
+  
   handleInjection(pages, src, dest, true);
 });
 
 gulp.task('buildProjectPages', function buildHTML() {
-  var pages = ['dom', 'kuchnia-1', 'kuchnia-2', 'kuchnia-3', 'kuchnia-4', 'krzeslo'];
-  var src = 'src/projects/';
-  var dest = '/projects/';
+  var pages = ['dom', 'kuchnia-1', 'kuchnia-2', 'kuchnia-3', 'kuchnia-4', 'krzeslo'],
+    src = 'src/projects/',
+    dest = '/projects/';
+  
   handleInjection(pages, src, dest, false);
 });
 
@@ -42,8 +45,15 @@ function handleInjection(pages, src, dest, includeHead) {
       }))
     .pipe(rename({dirname: `${dest}${page}`, basename: 'index', extname: '.html' }))
     .pipe(gulp.dest('.'));
-  })
+  });
 }
 
+gulp.task('minify:css', function() {
+  gulp.src('static/main.css')
+    .pipe(cssnano())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('static/'));
+});
+
 gulp.watch('src/**/*.html', ['buildMainPages', 'buildProjectPages']);
-gulp.task('default', ['buildMainPages', 'buildProjectPages']);
+gulp.task('default', ['buildMainPages', 'buildProjectPages', 'minify:css']);
