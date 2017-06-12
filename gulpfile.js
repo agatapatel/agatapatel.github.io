@@ -1,8 +1,9 @@
 var gulp = require('gulp'),
-    rename = require('gulp-rename'),
-    inject = require('gulp-inject'),
-    gulpif = require('gulp-if'),
-    cssnano = require('gulp-cssnano');
+  sass = require('gulp-sass'),
+  rename = require('gulp-rename'),
+  inject = require('gulp-inject'),
+  gulpif = require('gulp-if'),
+  cssnano = require('gulp-cssnano');
 
 gulp.task('buildMainPages', function buildHTML() {
   var pages = ['contact', 'cv', 'portfolio', 'projects', 'index'],
@@ -48,12 +49,18 @@ function handleInjection(pages, src, dest, includeHead) {
   });
 }
 
-gulp.task('minify:css', function() {
-  gulp.src('static/main.css')
+gulp.task('minify:css', function () {
+  return gulp.src('src/sass/main.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('static/'))
     .pipe(cssnano())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('static/'));
+    .pipe(gulp.dest('static/'))
 });
 
-gulp.watch('src/**/*.html', ['buildMainPages', 'buildProjectPages']);
+gulp.task('watch', function() {
+  gulp.watch('src/**/*.html', ['buildMainPages', 'buildProjectPages']);
+  gulp.watch('src/**/*.scss', ['minify:css']);
+});
+
 gulp.task('default', ['buildMainPages', 'buildProjectPages', 'minify:css']);
