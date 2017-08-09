@@ -1,5 +1,5 @@
 $icon-font-path: "../src/sass/vendor/bootstrap-sass-3.3.7/assets/fonts/bootstrap/";
-@import 'vendor/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap-custom/';
+@import 'vendor/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap-custom';
 
 
 * {
@@ -26,20 +26,3 @@ body {
 @import 'modules/nav';
 @import 'modules/footer';
 @import 'pages/projects/dom';
-
-
-/** 
-
-    rem multiplier : 1.25; 
-
-    0.8rem;
-    1rem;
-    1.25rem;
-    1.56rem;
-    1.95rem;
-    2.44rem;
-    3.05rem;
-    3.81rem;
-    4.76rem;
-
-**/
