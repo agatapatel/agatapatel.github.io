@@ -6,7 +6,7 @@ var gulp = require('gulp'),
   cssnano = require('gulp-cssnano');
 
 gulp.task('buildMainPages', function buildHTML() {
-  var pages = ['contact', 'cv', 'portfolio', 'projects', 'index'],
+  var pages = ['contact', 'cv', 'realizacje', 'projects', 'index'],
     src = 'src/',
     dest = '/';
   
