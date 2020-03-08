@@ -2218,6 +2218,30 @@ margin-bottom: -1px;
     display: none;
 }
 
+.partner--link {
+    flex: 0 0 25%;
+}
+
+.partners--img {
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex: 0 0 25%;
+}
+
+.partners--img-1 {
+    background-image: url('../img/partners/internity.png');
+    background-position: 45%;
+}
+.partners--img-2 {
+    background-image: url('../img/partners/dekorian.jpg');
+}
+.partners--img-3 {
+    background-image: url('../img/partners/espiro.svg');
+}
+.partners--img-4 {
+    background-image: url('../img/partners/techbud.png');
+}
 
 
 
