@@ -2244,6 +2244,61 @@ margin-bottom: -1px;
 }
 
 
+.xd-elements {
+    display: flex;
+    margin: 0 10% 60px 10%;
+}
 
+.xd-element-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    transition: all 250ms ease-in;
+    color: black;
+}
 
+.xd-element-content:hover {
+    background-color: black;
+    color: white;
+}
 
+.xd-element-content:visited {
+    color: black;
+}
+
+.xd-element-content img {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-height: 60px;
+    height: 30%;
+    transition: all 250ms ease-in;
+}
+
+.xd-element-content:hover img {
+    filter: invert(100);
+}
+
+.xd-element-content h2 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+.collab-services {
+    padding-top: 140px;
+}
+
+.collab-services-list {
+    margin-left: 20px;
+}
+
+.menubar-phone {
+    color: white;
+}
+
+.menubar-phone-black {
+    color: black;
+}
