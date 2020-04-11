@@ -2268,6 +2268,10 @@ margin-bottom: -1px;
     color: black;
 }
 
+.xd-element-content:visited:hover {
+    color: white;
+}
+
 .xd-element-content img {
     display: block;
     margin: 0 auto 30px auto;
